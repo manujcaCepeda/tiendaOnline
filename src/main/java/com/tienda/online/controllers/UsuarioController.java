@@ -34,6 +34,11 @@ private static final Logger logger = LoggerFactory.getLogger(UsuarioController.c
 		this.usuarioService = usuarioService;
 	}
 	
+	/**
+	 * Metodo que permite guardar un usuario
+	 * @param usuario
+	 * @return
+	 */
 	@PostMapping(produces="application/json")
 	public Usuario guardar(@RequestBody @Validated Usuario usuario) {
 		try {
